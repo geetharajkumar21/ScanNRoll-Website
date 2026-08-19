@@ -52,13 +52,18 @@ function Platforms() {
                 Professional mobile toolkit for on-the-go operations.
               </p>
               <div className="store-badges">
-                <span className="store-badge-shell">
+                <a
+                  className="store-badge-shell"
+                  href="https://play.google.com/store/apps/details?id=com.scannroll.app&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     className="store-badge-image"
                     src="/assets/google-play-badge-trimmed.png"
                     alt="Get it on Google Play"
                   />
-                </span>
+                </a>
               </div>
             </div>
           </div>
@@ -83,20 +88,30 @@ function Platforms() {
                 Scan QR codes and NFC tags to access digital experiences.
               </p>
               <div className="store-badges">
-                <span className="store-badge-shell">
+                <a
+                  className="store-badge-shell"
+                  href="https://play.google.com/store/apps/details?id=com.scannroll.clientapp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     className="store-badge-image"
                     src="/assets/google-play-badge-trimmed.png"
                     alt="Get it on Google Play"
                   />
-                </span>
-                <span className="store-badge-shell">
+                </a>
+                <a
+                  className="store-badge-shell"
+                  href="https://apps.apple.com/us/app/scannroll/id6748814746"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     className="store-badge-image store-badge-image--app-store"
                     src="/assets/app-store-badge.svg"
                     alt="Download on the App Store"
                   />
-                </span>
+                </a>
               </div>
             </div>
           </div>
