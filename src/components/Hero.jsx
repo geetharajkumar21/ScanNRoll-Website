@@ -1,5 +1,3 @@
-import topbanner from "./topbanner.png";
-
 function Hero() {
   return (
     <section className="hero" id="home">
@@ -15,10 +13,10 @@ function Hero() {
         <div className="hero__media">
           <img
             className="hero__illustration"
-            src={topbanner}
+            src="/assets/hero-illustration.png"
             alt="ScanNRoll platform illustration connecting asset management, smart trolleys and media solutions"
           />
-          <div className="hero__tags">
+          {/* <div className="hero__tags">
             <span className="hero__tag hero__tag--asset">
               Assest Management Software
             </span>
@@ -28,7 +26,7 @@ function Hero() {
             <span className="hero__tag hero__tag--media">
               Media &amp; Interactive Solutions
             </span>
-          </div>
+          </div> */}
         </div>
 
         <div className="hero__content">
@@ -37,11 +35,16 @@ function Hero() {
             assets, engage customers and drive growth with confidence.
           </p>
           <div className="hero__actions">
-            <a className="hero__btn hero__btn--primary" href="#web-login">
-              ScanNRoll Web Login <span aria-hidden="true">→</span>
-            </a>
-            <a className="hero__btn hero__btn--outline" href="#store-admin">
-              ScanNRoll Store Admin <span aria-hidden="true">→</span>
+            <a
+              className="hero__btn hero__btn--primary"
+              href="https://happy-forest-010547103.7.azurestaticapps.net/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>ScanNRoll Web Login</span>
+              <span className="hero__btn-arrow" aria-hidden="true">
+                →
+              </span>
             </a>
           </div>
         </div>

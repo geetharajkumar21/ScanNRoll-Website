@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Work+Sans:wght@500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -18,7 +20,7 @@ body {
 
 #root {
   min-height: 100svh;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img {

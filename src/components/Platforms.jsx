@@ -1,37 +1,14 @@
-const platforms = [
-  {
-    key: 'web',
-    name: 'ScanNRoll Web',
-    tagline: 'Manage your operations with ease.',
-    color: '#47650b',
-    bg: '#eef7e2',
-    icon: '/assets/web-login-icon.png',
-    iconSize: { width: 80, height: 80 },
-    action: { label: 'Inquire an Account', style: 'solid', bg: '#47650b' },
-  },
-  {
-    key: 'pro',
-    name: 'ScanNRoll Pro',
-    tagline: 'Professional mobile toolkit for on-the-go operations.',
-    color: '#102b96',
-    bg: '#eaf4fd',
-    icon: '/assets/app-pro-phone.png',
-    iconSize: { width: 66, height: 117 },
-    action: { label: 'Inquire an Account', style: 'solid', bg: '#102b96' },
-    badge: 'google',
-  },
-  {
-    key: 'app',
-    name: 'ScanNRoll App',
-    tagline: 'Scan QR codes and NFC tags to access digital experiences.',
-    color: '#ff4800',
-    bg: '#fff1e6',
-    icon: '/assets/app-scan-phone.png',
-    iconSize: { width: 63, height: 112 },
-    badges: ['google', 'apple'],
-    badges: ['Get it on Google Play', 'Download on the App Store'],
-  },
-];
+function InquireIcon() {
+  return (
+    <span className="platform-card__inquire-icon" aria-hidden="true">
+      <svg viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg" focusable="false">
+        <circle cx="25" cy="10" r="8" fill="none" stroke="currentColor" strokeWidth="3" />
+        <path d="M4 34c4-9 14-14 26-14 6 0 12 2 17 5" fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="3" />
+        <path d="M54 20v22M43 31h22" fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="3" />
+      </svg>
+    </span>
+  );
+}
 
 function Platforms() {
   return (
@@ -40,65 +17,90 @@ function Platforms() {
       <h2 className="section-title">Powerful Tools. Built for Every Workflow</h2>
 
       <div className="platforms__grid">
-        {platforms.map((p) => (
-          <div
-            className="platform-card"
-            key={p.key}
-            style={{ backgroundColor: p.bg }}
-          >
-            <div className="platform-card__top">
-              <img
-                className="platform-card__icon"
-                src={p.icon}
-                alt={p.name}
-                style={{
-                  width: p.iconSize.width,
-                  height: p.iconSize.height,
-                }}
-              />
-              <div className="platform-card__text">
-                <h3 className="platform-card__title" style={{ color: p.color }}>
-                  {p.name}
-                </h3>
-                <p className="platform-card__desc">{p.tagline}</p>
-              </div>
-            </div>
-
-            <div className="platform-card__bottom">
-              {p.action && p.action.style === 'solid' && (
-                <a
-                  className="platform-card__btn platform-card__btn--solid"
-                  style={{ backgroundColor: p.action.bg }}
-                  href={`#${p.key}`}
-                >
-                  {p.action.label}
-                </a>
-              )}
-              {p.action && p.action.style === 'outline' && (
-                <a
-                  className="platform-card__btn platform-card__btn--outline"
-                  style={{ color: p.action.color, borderColor: p.action.color }}
-                  href={`#${p.key}`}
-                >
-                  {p.action.label} <span aria-hidden="true">→</span>
-                </a>
-              )}
-
-              {p.badge && (
-                <span className="platform-card__badge">{p.badge}</span>
-              )}
-              {p.badges && (
-                <div className="platform-card__badges">
-                  {p.badges.map((b) => (
-                    <span className="platform-card__badge" key={b}>
-                      {b}
-                    </span>
-                  ))}
-                </div>
-              )}
+        <article className="platform-card platform-card--web">
+          <div className="platform-card__body">
+            <img
+              className="platform-card__icon platform-card__icon--web"
+              src="/assets/web-login-icon.png"
+              alt="ScanNRoll Web"
+            />
+            <div className="platform-card__copy">
+              <h3 className="platform-card__title platform-card__title--web">
+                ScanNRoll Web
+              </h3>
+              <p className="platform-card__desc">Manage your operations with ease.</p>
             </div>
           </div>
-        ))}
+          <a className="platform-card__btn platform-card__btn--web-inquire" href="mailto:info@scannroll.com">
+            <InquireIcon />
+            <span>Inquire an Account</span>
+          </a>
+        </article>
+
+        <article className="platform-card platform-card--pro">
+          <div className="platform-card__body platform-card__body--pro">
+            <img
+              className="platform-card__icon platform-card__icon--pro"
+              src="/assets/app-pro-phone.png"
+              alt="ScanNRoll Pro"
+            />
+            <div className="platform-card__copy platform-card__copy--pro">
+              <h3 className="platform-card__title platform-card__title--blue">
+                ScanNRoll Pro
+              </h3>
+              <p className="platform-card__desc platform-card__desc--narrow">
+                Professional mobile toolkit for on-the-go operations.
+              </p>
+              <div className="store-badges">
+                <span className="store-badge-shell">
+                  <img
+                    className="store-badge-image"
+                    src="/assets/google-play-badge-trimmed.png"
+                    alt="Get it on Google Play"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+          <a className="platform-card__btn platform-card__btn--pro-inquire" href="mailto:info@scannroll.com">
+            <InquireIcon />
+            <span>Inquire an Account</span>
+          </a>
+        </article>
+
+        <article className="platform-card platform-card--app">
+          <div className="platform-card__body platform-card__body--app">
+            <img
+              className="platform-card__icon platform-card__icon--app"
+              src="/assets/app-scan-phone.png"
+              alt="ScanNRoll App"
+            />
+            <div className="platform-card__copy platform-card__copy--app">
+              <h3 className="platform-card__title platform-card__title--orange">
+                ScanNRoll App
+              </h3>
+              <p className="platform-card__desc platform-card__desc--narrow">
+                Scan QR codes and NFC tags to access digital experiences.
+              </p>
+              <div className="store-badges">
+                <span className="store-badge-shell">
+                  <img
+                    className="store-badge-image"
+                    src="/assets/google-play-badge-trimmed.png"
+                    alt="Get it on Google Play"
+                  />
+                </span>
+                <span className="store-badge-shell">
+                  <img
+                    className="store-badge-image store-badge-image--app-store"
+                    src="/assets/app-store-badge.svg"
+                    alt="Download on the App Store"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   );

@@ -62,7 +62,7 @@ function Solutions() {
               className="solution-card__icon"
               style={{
                 backgroundImage: 'url(/assets/solutions-icons-sprite.png)',
-                backgroundPositionX: s.iconPosition,
+                backgroundPosition: `${s.iconPosition} center`,
               }}
               role="img"
               aria-label={s.name}
