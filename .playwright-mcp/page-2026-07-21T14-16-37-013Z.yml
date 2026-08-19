@@ -1,0 +1,143 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - img "ScanNRoll logo" [ref=e6]
+      - generic [ref=e7]: ScanNRoll
+    - navigation "Main navigation" [ref=e8]:
+      - link "Home" [ref=e9] [cursor=pointer]:
+        - /url: "#home"
+      - link "About Us" [ref=e10] [cursor=pointer]:
+        - /url: "#about"
+      - link "Learning" [ref=e11] [cursor=pointer]:
+        - /url: "#learning"
+    - button "Language" [ref=e12] [cursor=pointer]:
+      - text: Language
+      - generic [ref=e13]: ▾
+  - main [ref=e14]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - heading "Smart Solutions. Connected Experiences. Measurable Impact." [level=1] [ref=e18]:
+          - generic [ref=e19]: Smart Solutions.
+          - generic [ref=e20]: Connected Experiences.
+          - generic [ref=e21]: Measurable Impact.
+        - paragraph [ref=e22]: ScanNRoll empowers businesses with innovative solutions to manage assets, engage customers and drive growth with confidence.
+        - generic [ref=e23]:
+          - link "ScanNRoll Web Login" [ref=e24] [cursor=pointer]:
+            - /url: "#web-login"
+            - text: ScanNRoll Web Login
+            - generic [ref=e25]: →
+          - link "ScanNRoll Store Admin" [ref=e26] [cursor=pointer]:
+            - /url: "#store-admin"
+            - text: ScanNRoll Store Admin
+            - generic [ref=e27]: →
+      - generic [ref=e28]:
+        - img "ScanNRoll platform illustration connecting asset management, smart trolleys and media solutions" [ref=e29]
+        - generic [ref=e30]:
+          - generic [ref=e31]: Assest Management Software
+          - generic [ref=e32]: Smart Trolley Solutions
+          - generic [ref=e33]: Media & Interactive Solutions
+    - generic [ref=e34]:
+      - paragraph [ref=e35]: OUR PLATFORMS
+      - heading "Powerful Tools. Built for Every Workflow" [level=2] [ref=e36]
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - img "ScanNRoll Web" [ref=e40]
+            - generic [ref=e41]:
+              - heading "ScanNRoll Web" [level=3] [ref=e42]
+              - paragraph [ref=e43]: Managing your operations.
+          - link "Inquire an Account" [ref=e45] [cursor=pointer]:
+            - /url: "#web"
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - img "ScanNRoll Pro" [ref=e48]
+            - generic [ref=e49]:
+              - heading "ScanNRoll Pro" [level=3] [ref=e50]
+              - paragraph [ref=e51]: Operations on the go.
+          - generic [ref=e52]:
+            - link "Inquire an Account" [ref=e53] [cursor=pointer]:
+              - /url: "#pro"
+            - generic [ref=e54]: Get it on Google Play
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - img "ScanNRoll App" [ref=e57]
+            - generic [ref=e58]:
+              - heading "ScanNRoll App" [level=3] [ref=e59]
+              - paragraph [ref=e60]: Scan QR codes and NFC tags to access digital experiences.
+          - generic [ref=e62]:
+            - generic [ref=e63]: Get it on Google Play
+            - generic [ref=e64]: Download on the App Store
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - img "ScanNRoll Store" [ref=e67]
+            - generic [ref=e68]:
+              - heading "ScanNRoll Store" [level=3] [ref=e69]
+              - paragraph [ref=e70]: IDs and essentials for your operations.
+          - link "Visit Store" [ref=e72] [cursor=pointer]:
+            - /url: "#store"
+            - text: Visit Store
+            - generic [ref=e73]: →
+    - generic [ref=e74]:
+      - paragraph [ref=e75]: OUR SOLUTIONS
+      - heading "Three Powerful Solutions. One Seamless Ecosystem." [level=2] [ref=e76]
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - img "Assest Management Software" [ref=e79]
+          - heading "Assest Management Software" [level=3] [ref=e80]
+          - list [ref=e81]:
+            - listitem [ref=e82]: ✓ Reports & Dashboards
+            - listitem [ref=e83]: ✓ Lifecycle Analytics
+            - listitem [ref=e84]: ✓ Product Data & Media
+            - listitem [ref=e85]: ✓ Asset Tracking & Inventory
+            - listitem [ref=e86]: ✓ Maintenance Management
+        - generic [ref=e87]:
+          - img "Smart Trolley Solutions" [ref=e88]
+          - heading "Smart Trolley Solutions" [level=3] [ref=e89]
+          - list [ref=e90]:
+            - listitem [ref=e91]: ✓ Smart Connected Trolleys
+            - listitem [ref=e92]: ✓ QR/NFC Integration
+            - listitem [ref=e93]: ✓ Operational Efficiency
+            - listitem [ref=e94]: ✓ Real Time Inventory
+            - listitem [ref=e95]: ✓ Loss Prevention
+        - generic [ref=e96]:
+          - img "Media & Interactive Solutions" [ref=e97]
+          - heading "Media & Interactive Solutions" [level=3] [ref=e98]
+          - list [ref=e99]:
+            - listitem [ref=e100]: ✓ Campaign Management
+            - listitem [ref=e101]: ✓ Interactive Experiences
+            - listitem [ref=e102]: ✓ Content Management
+            - listitem [ref=e103]: ✓ Audience Engagement
+            - listitem [ref=e104]: ✓ Performance Insights
+    - generic [ref=e105]:
+      - paragraph [ref=e106]: INDUSTRIES WE SERVE
+      - heading "Empowering Business Across Diverse industries" [level=2] [ref=e107]
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - img "Retail" [ref=e110]
+          - paragraph [ref=e111]: Retail
+        - generic [ref=e112]:
+          - img "Logistics" [ref=e113]
+          - paragraph [ref=e114]: Logistics
+        - generic [ref=e115]:
+          - img "Manufacturing" [ref=e116]
+          - paragraph [ref=e117]: Manufacturing
+        - generic [ref=e118]:
+          - img "Hospitality" [ref=e119]
+          - paragraph [ref=e120]: Hospitality
+        - generic [ref=e121]:
+          - img "Media & Interactive" [ref=e122]
+          - paragraph [ref=e123]: Media & Interactive
+  - contentinfo [ref=e124]:
+    - generic [ref=e125]:
+      - img "ScanNRoll logo" [ref=e127]
+      - generic [ref=e128]: ScanNRoll
+    - paragraph [ref=e129]: All-in-one solutions that help businesses manage, connect and grow with confidence.
+    - navigation "Footer navigation" [ref=e130]:
+      - link "Privacy Policy" [ref=e131] [cursor=pointer]:
+        - /url: "#"
+      - link "User Manual" [ref=e132] [cursor=pointer]:
+        - /url: "#"
+      - link "Terms of Use" [ref=e133] [cursor=pointer]:
+        - /url: "#"
+      - link "About Us" [ref=e134] [cursor=pointer]:
+        - /url: "#"
