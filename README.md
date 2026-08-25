@@ -1,16 +1,36 @@
-# React + Vite
+# ScanNRoll Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Marketing website for ScanNRoll, built with React and Vite.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [React](https://react.dev/) + [Vite](https://vite.dev/) for the app and dev server
+- Plain CSS for styling
+- ESLint for linting
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Install dependencies and start the dev server:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Other useful scripts:
+
+```bash
+npm run build   # production build
+npm run lint     # run ESLint
+npm run preview  # preview the production build locally
+```
+
+## Project Structure
+
+- `src/components/` — shared sections (Header, Hero, Platforms, Solutions, Industries, Footer)
+- `src/pages/` — routed pages (About Us, Contact Us, Privacy Policy, Terms of Use)
+- `public/assets/` — static assets
+
+## Contact Form
+
+The contact form on the Contact Us page can post submissions as JSON to a webhook. Set the `VITE_CONTACT_SHEET_WEBHOOK_URL` environment variable (e.g. in a `.env` file) to enable this.
